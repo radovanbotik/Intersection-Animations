@@ -19,7 +19,8 @@ const animateBoxes = (entries, observer) => {
       console.log(window.innerHeight);
       console.log(entry);
       const image = entry.target.querySelector("img");
-      image.style.transform = `translateX(0%)`;
+      // image.style.transform = `translateX(0%)`;
+      image.style.transform = `scale(1.1)`;
     }
   });
 };
