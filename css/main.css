@@ -11,7 +11,6 @@ body {
   flex-direction: column;
 }
 body section {
-  border: 1px solid white;
   position: relative;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
