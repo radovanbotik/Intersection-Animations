@@ -22,10 +22,16 @@ body section .box {
   position: relative;
 }
 body section .box img {
-  width: 100%;
+  position: absolute;
+  left: -39%;
+  width: 140%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 800ms ease-in;
+}
+body section h2 {
+  transition: transform 1000ms ease-in;
 }
 body section:nth-child(1) {
   flex: 2;
@@ -40,18 +46,11 @@ body section:nth-child(4) .box {
   grid-column: 2/4;
   grid-row: 1;
 }
-body section:nth-child(2) .box img,
-body section:nth-child(4) .box img {
-  transition: transform 700ms ease-in;
-}
 body section:nth-child(2) h2,
 body section:nth-child(4) h2 {
   align-self: center;
-  grid-column: 3/7;
+  grid-column: 4/8;
   grid-row: 1;
-  z-index: 2;
-  transform: translateX(0%);
-  transition: transform 500ms ease-in;
 }
 body section:nth-child(3),
 body section:nth-child(5) {
@@ -63,16 +62,10 @@ body section:nth-child(5) .box {
   grid-column: 8/11;
   grid-row: 1;
 }
-body section:nth-child(3) .box img,
-body section:nth-child(5) .box img {
-  transition: transform 700ms ease-in;
-}
 body section:nth-child(3) h2,
 body section:nth-child(5) h2 {
   align-self: center;
   grid-column: 2/8;
   grid-row: 1;
   z-index: 2;
-  transform: translateX(0%);
-  transition: transform 500ms ease-in;
 }/*# sourceMappingURL=main.css.map */

@@ -12,15 +12,12 @@ const optionsHeadings = {
 };
 
 const animateBoxes = (entries, observer) => {
-  console.log(observer);
   entries.forEach(entry => {
-    console.log(entry.boundingClientRect, window.innerHeight);
     if (entry.isIntersecting) {
-      console.log(window.innerHeight);
-      console.log(entry);
       const image = entry.target.querySelector("img");
-      // image.style.transform = `translateX(0%)`;
-      image.style.transform = `scale(1.1)`;
+      image.style.transform = `scale(1.05)`;
+      image.style.left = 0;
+      image.style.width = "100%";
     }
   });
 };
